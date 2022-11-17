@@ -25,6 +25,36 @@ body.green {
   --bg: url(./assets/bg-green.svg);
 }
 
+body.catarpurplewhite {
+  --card-title-border-color: #047c3f;
+  --card-color-primary: #047c3f;
+  --card-bg-color: #1a1f1b;
+  --bg: url(./assets/bg-catar-purple-white.jpg);
+}
+
+body.catarcup {
+  --card-title-border-color: #047c3f;
+  --card-color-primary: #047c3f;
+  --card-bg-color: #1a1f1b;
+  --bg: url(./assets/bg-catarcup.jpg);
+}
+
+body.catarredwine {
+  --card-title-border-color: #047c3f;
+  --card-color-primary: #047c3f;
+  --card-bg-color: #1a1f1b;
+  --bg: url(./assets/bg-catar-red-wine.jpg);
+}
+
+body.catarwine {
+  --card-title-border-color: #047c3f;
+  --card-color-primary: #047c3f;
+  --card-bg-color: #1a1f1b;
+  --bg: url(./assets/bg-catar-wine.jpg);
+}
+
+
+
 ul {
   list-style: none;
 }
@@ -47,27 +77,31 @@ body * {
 #app {
   width: fit-content;
   margin: auto;
-  padding-top: 52px;
+  
 }
 
 header {
-  margin-bottom: 63px;
+  margin-bottom: 30px;
   text-align: center;
+  margin-top: 30px;
+  
 }
 
 #cards {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+  display:flow-root;
+  flex-direction:column;
+  gap: 70px;
+  opacity: 0.9;
 }
 
 .card {
   padding: 32px 23px;
   text-align: center;
 
-  background: var(--card-bg-color);
+  background: #2c040c;
   border-bottom: 2px solid var(--card-color-primary);
   border-radius: 6px;
+  
 }
 
 .card h2 {
@@ -133,8 +167,8 @@ header {
 }
 
 .card {
-  opacity: 0;
-  animation: appear 0.2s forwards;
+  opacity: 0.9;
+  animation: appear 1s forwards;
 }
 
 @keyframes appear {
